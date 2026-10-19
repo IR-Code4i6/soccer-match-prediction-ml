@@ -14,7 +14,7 @@ RECENCY_WINDOW = 5
 
 
 def load_matches(path=DATA_PATH):
-    """Load, validate, and chronologically sort the match dataset."""
+    """Load, validate, sort the match dataset"""
     df = pd.read_csv(path)
     df.columns = df.columns.str.strip()
 
@@ -51,7 +51,7 @@ def load_matches(path=DATA_PATH):
 
 
 def team_record(row, is_home):
-    """Convert a finished match into one team's perspective."""
+    """Convert a finished match into one teams perspective"""
     if is_home:
         result = row["FTR"]
         goals_for = row["FTHG"]
@@ -79,11 +79,11 @@ def mean_stat(history, stat):
 
 def add_history_features(matches):
     """
-    Home-team features use its previous home matches.
-    Away-team features use its previous away matches.
+    Home team features use its previous home matches
+    Away team features use its previous away matches
 
     Each match is added to history only after its features
-    have been calculated, preventing current-match leakage.
+    have been calculated to prevent current match leakage
     """
     histories = {}
     feature_rows = []
@@ -96,7 +96,7 @@ def add_history_features(matches):
         home_history = histories.setdefault((home, "home"), [])
         away_history = histories.setdefault((away, "away"), [])
 
-        # Require 10 prior venue-specific matches for fair comparison.
+        # Require 10 prior venue specific matches for fair comparison
         eligible = len(home_history) >= 10 and len(away_history) >= 10
 
         features = {}
@@ -110,24 +110,24 @@ def add_history_features(matches):
                     ("home", home_recent),
                     ("away", away_recent),
                 ]:
-                    # Group A: goals scored and conceded.
+                    # Group A: goals scored and conceded
                     for stat in ["goals_for", "goals_against"]:
                         features[
                             f"{side}_{stat}_{window}"
                         ] = mean_stat(history, stat)
 
-                    # Group B: goals plus points.
+                    # Group B: goals plus points
                     features[
                         f"{side}_points_{window}"
                     ] = mean_stat(history, "points")
 
-                    # Group C: goals, points, and shots on target.
+                    # Group C: goals, points, and shots on target
                     features[
                         f"{side}_shots_on_target_{window}"
                     ] = mean_stat(history, "shots_on_target")
 
             # Recency experiment:
-            # latest five venue-specific appearances vs previous five.
+            # latest five venue specific appearances vs previous five
             for side, history in [
                 ("home", home_history),
                 ("away", away_history),
@@ -152,7 +152,7 @@ def add_history_features(matches):
             feature_rows.append(features)
             eligible_rows.append(row.to_dict())
 
-        # Update histories only after features for this match are built.
+        # Update histories only after features for this match are built
         histories[(home, "home")].append(team_record(row, True))
         histories[(away, "away")].append(team_record(row, False))
 
@@ -169,7 +169,7 @@ def add_history_features(matches):
 
 
 def get_feature_columns(df, group="C", window=5):
-    """Return features for group A, B, or C and a history window."""
+    """Return features for group A, B, or C and a history window"""
     if group not in {"A", "B", "C"}:
         raise ValueError("Feature group must be A, B, or C.")
 
@@ -189,7 +189,7 @@ def get_feature_columns(df, group="C", window=5):
 
 
 def get_recency_columns():
-    """Return features for the recent-five versus older-five experiment."""
+    """Return features for the recent five versus older five experiment"""
     return [
         f"{side}_{period}_{stat}"
         for side in ["home", "away"]
@@ -202,7 +202,7 @@ def get_recency_columns():
 
 
 def chronological_split(df):
-    """Split the eligible matches into older and newer periods."""
+    """Split the eligible matches into older and newer periods"""
     n = len(df)
     train_end = int(n * 0.70)
     validation_end = int(n * 0.85)

@@ -94,7 +94,7 @@ def save_dataset_summary(train, validation, test):
 def run_baselines():
     train, validation, test = prepare_data()
 
-    # Keep the approved Group C, five-match baseline configuration.
+    # Keep the approved Group C five match baseline configuration
     features = get_feature_columns(train, group="C", window=5)
 
     X_train = train[features]

@@ -69,7 +69,7 @@ def evaluate(model, X, y):
 
 
 def experiment_configurations(train):
-    """Yield feature definitions for history windows and recency."""
+    """Yield feature definitions for history windows and recency"""
     for group in ["A", "B", "C"]:
         for window in [3, 5, 10]:
             yield {
@@ -104,7 +104,7 @@ def run_experiments():
 
     validation_rows = []
 
-    # Compare models and feature configurations on validation data.
+    # Compare models and feature configurations on validation data
     for config in experiment_configurations(train):
         features = config["features"]
         X_train = train[features]
@@ -132,7 +132,7 @@ def run_experiments():
         RESULTS_DIR / "validation_results.csv", index=False
     )
 
-    # Choose settings using validation macro F1 only.
+    # Choose settings using validation macro F1 only
     best = validation_results.sort_values(
         "validation_macro_f1", ascending=False
     ).iloc[0]
@@ -148,7 +148,7 @@ def run_experiments():
 
     best_model = create_model(best["model"])
 
-    # Refit on training + validation after selecting the configuration.
+    # Refit on training + validation after selecting the configuration
     train_validation = pd.concat(
         [train, validation], ignore_index=True
     )

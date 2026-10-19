@@ -1,0 +1,11 @@
+model,class,precision,recall,f1-score,support
+Majority-class benchmark,Home win (H),0.4444444444444444,1.0,0.6153846153846154,12.0
+Majority-class benchmark,Draw (D),0.0,0.0,0.0,10.0
+Majority-class benchmark,Away win (A),0.0,0.0,0.0,5.0
+Majority-class benchmark,macro avg,0.14814814814814814,0.3333333333333333,0.20512820512820515,27.0
+Majority-class benchmark,weighted avg,0.19753086419753085,0.4444444444444444,0.27350427350427353,27.0
+Logistic Regression,Home win (H),0.4,0.5,0.4444444444444444,12.0
+Logistic Regression,Draw (D),0.75,0.3,0.42857142857142855,10.0
+Logistic Regression,Away win (A),0.125,0.2,0.15384615384615385,5.0
+Logistic Regression,macro avg,0.425,0.3333333333333333,0.34228734228734226,27.0
+Logistic Regression,weighted avg,0.47870370370370374,0.37037037037037035,0.3847510514177181,27.0

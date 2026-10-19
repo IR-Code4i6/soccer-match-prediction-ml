@@ -20,6 +20,8 @@ We plan to compare different amounts of recent match history, such as the previo
 The project compares:
 - Logistic Regression
 - Random Forest
+- Neural Networks (MLP(32), MLP(64,32))
+- MLP (with PCA)
 
 ## Tools
 

@@ -51,6 +51,8 @@ Run the data pipeline, fixed baseline, and experiment comparison in that order:
 .\.venv\Scripts\python.exe main.py --task experiments
 ```
 
+[![Watch the demo](https://img.youtube.com/vi/PSxzFBh0fqg/0.jpg)](https://www.youtube.com/watch?v=PSxzFBh0fqg)
+
 The pipeline uses **`Data/E0_cleaned.csv`** file and not the raw CSV file. For a match to be eligible, the home team must have at least 10 previous home matches and the away team must have at least 10 previous away matches. From the provided dataset, there are 200 warm-up matches and 180 valid matches.
 
 

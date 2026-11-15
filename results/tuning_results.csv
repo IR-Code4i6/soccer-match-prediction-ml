@@ -1,0 +1,20 @@
+experiment,model,setting,train_f1_mean,val_f1_mean,val_f1_std,gap
+rf_max_depth,Random Forest,max_depth=2,0.619,0.581,0.049,0.037
+rf_max_depth,Random Forest,max_depth=3,0.736,0.568,0.067,0.168
+rf_max_depth,Random Forest,max_depth=5,0.946,0.505,0.04,0.441
+rf_max_depth,Random Forest,max_depth=8,0.991,0.485,0.042,0.505
+rf_max_depth,Random Forest,max_depth=None,1.0,0.555,0.08,0.445
+rf_min_samples_leaf,Random Forest,min_samples_leaf=1,1.0,0.555,0.08,0.445
+rf_min_samples_leaf,Random Forest,min_samples_leaf=5,0.763,0.52,0.042,0.243
+rf_min_samples_leaf,Random Forest,min_samples_leaf=10,0.584,0.511,0.061,0.072
+rf_min_samples_leaf,Random Forest,min_samples_leaf=20,0.507,0.572,0.087,-0.065
+mlp_alpha,MLP (32),alpha=0.0001,0.823,0.393,0.053,0.429
+mlp_alpha,MLP (32),alpha=0.001,0.824,0.385,0.056,0.439
+mlp_alpha,MLP (32),alpha=0.01,0.816,0.398,0.054,0.419
+mlp_alpha,MLP (32),alpha=0.1,0.806,0.392,0.045,0.415
+mlp_alpha,MLP (32),alpha=1,0.734,0.425,0.023,0.31
+mlp_alpha,MLP (32),alpha=10,0.476,0.562,0.027,-0.085
+pca_variance,MLP (32) + PCA,pca_variance=0.8,0.636,0.452,0.027,0.184
+pca_variance,MLP (32) + PCA,pca_variance=0.9,0.669,0.503,0.036,0.166
+pca_variance,MLP (32) + PCA,pca_variance=0.95,0.752,0.463,0.063,0.289
+pca_variance,MLP (32) + PCA,pca_variance=0.99,0.803,0.375,0.09,0.429

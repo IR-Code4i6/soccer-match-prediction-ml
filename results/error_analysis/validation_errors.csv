@@ -1,0 +1,21 @@
+model,split,Date,HomeTeam,AwayTeam,actual,predicted,correct
+Random Forest (untuned),validation,2026-04-19,Everton,Liverpool,A,D,False
+Random Forest (untuned),validation,2026-04-19,Nott'm Forest,Burnley,H,D,False
+Random Forest (untuned),validation,2026-04-21,Brighton,Chelsea,H,A,False
+Random Forest (untuned),validation,2026-04-22,Burnley,Man City,A,H,False
+Random Forest (untuned),validation,2026-04-24,Sunderland,Nott'm Forest,A,H,False
+Random Forest (untuned),validation,2026-04-25,Fulham,Aston Villa,H,A,False
+Random Forest (untuned),validation,2026-04-25,West Ham,Everton,H,D,False
+Random Forest (untuned),validation,2026-04-25,Arsenal,Newcastle,H,A,False
+Random Forest (untuned),validation,2026-05-02,Newcastle,Brighton,H,A,False
+Random Forest (untuned),validation,2026-05-09,Liverpool,Chelsea,D,A,False
+Random Forest (depth 2),validation,2026-04-19,Nott'm Forest,Burnley,H,D,False
+Random Forest (depth 2),validation,2026-04-21,Brighton,Chelsea,H,A,False
+Random Forest (depth 2),validation,2026-04-22,Bournemouth,Leeds,D,A,False
+Random Forest (depth 2),validation,2026-04-22,Burnley,Man City,A,D,False
+Random Forest (depth 2),validation,2026-04-24,Sunderland,Nott'm Forest,A,H,False
+Random Forest (depth 2),validation,2026-04-25,Fulham,Aston Villa,H,A,False
+Random Forest (depth 2),validation,2026-04-25,West Ham,Everton,H,D,False
+Random Forest (depth 2),validation,2026-05-02,Newcastle,Brighton,H,A,False
+Random Forest (depth 2),validation,2026-05-03,Aston Villa,Tottenham,A,H,False
+Random Forest (depth 2),validation,2026-05-09,Liverpool,Chelsea,D,H,False

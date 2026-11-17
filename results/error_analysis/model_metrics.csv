@@ -1,0 +1,5 @@
+model,split,samples,accuracy,macro_f1
+Random Forest (untuned),train,125,1.0,1.0
+Random Forest (untuned),validation,28,0.6428571428571429,0.6355311355311355
+Random Forest (depth 2),train,125,0.616,0.6163660613071422
+Random Forest (depth 2),validation,28,0.6428571428571429,0.621001221001221

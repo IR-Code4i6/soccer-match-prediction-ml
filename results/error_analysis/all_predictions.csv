@@ -1,0 +1,307 @@
+model,split,Date,HomeTeam,AwayTeam,actual,predicted,correct
+Random Forest (untuned),train,2026-01-06,West Ham,Nott'm Forest,A,A,True
+Random Forest (untuned),train,2026-01-07,Bournemouth,Tottenham,H,H,True
+Random Forest (untuned),train,2026-01-07,Brentford,Sunderland,H,H,True
+Random Forest (untuned),train,2026-01-07,Crystal Palace,Aston Villa,D,D,True
+Random Forest (untuned),train,2026-01-07,Everton,Wolves,D,D,True
+Random Forest (untuned),train,2026-01-07,Fulham,Chelsea,H,H,True
+Random Forest (untuned),train,2026-01-07,Man City,Brighton,D,D,True
+Random Forest (untuned),train,2026-01-07,Burnley,Man United,D,D,True
+Random Forest (untuned),train,2026-01-07,Newcastle,Leeds,H,H,True
+Random Forest (untuned),train,2026-01-08,Arsenal,Liverpool,D,D,True
+Random Forest (untuned),train,2026-01-17,Man United,Man City,H,H,True
+Random Forest (untuned),train,2026-01-17,Chelsea,Brentford,H,H,True
+Random Forest (untuned),train,2026-01-17,Leeds,Fulham,H,H,True
+Random Forest (untuned),train,2026-01-17,Liverpool,Burnley,D,D,True
+Random Forest (untuned),train,2026-01-17,Sunderland,Crystal Palace,H,H,True
+Random Forest (untuned),train,2026-01-17,Tottenham,West Ham,A,A,True
+Random Forest (untuned),train,2026-01-17,Nott'm Forest,Arsenal,D,D,True
+Random Forest (untuned),train,2026-01-18,Wolves,Newcastle,D,D,True
+Random Forest (untuned),train,2026-01-18,Aston Villa,Everton,A,A,True
+Random Forest (untuned),train,2026-01-19,Brighton,Bournemouth,D,D,True
+Random Forest (untuned),train,2026-01-24,West Ham,Sunderland,H,H,True
+Random Forest (untuned),train,2026-01-24,Burnley,Tottenham,D,D,True
+Random Forest (untuned),train,2026-01-24,Fulham,Brighton,H,H,True
+Random Forest (untuned),train,2026-01-24,Man City,Wolves,H,H,True
+Random Forest (untuned),train,2026-01-24,Bournemouth,Liverpool,H,H,True
+Random Forest (untuned),train,2026-01-25,Brentford,Nott'm Forest,A,A,True
+Random Forest (untuned),train,2026-01-25,Crystal Palace,Chelsea,A,A,True
+Random Forest (untuned),train,2026-01-25,Newcastle,Aston Villa,A,A,True
+Random Forest (untuned),train,2026-01-25,Arsenal,Man United,A,A,True
+Random Forest (untuned),train,2026-01-26,Everton,Leeds,D,D,True
+Random Forest (untuned),train,2026-01-31,Brighton,Everton,D,D,True
+Random Forest (untuned),train,2026-01-31,Leeds,Arsenal,A,A,True
+Random Forest (untuned),train,2026-01-31,Wolves,Bournemouth,A,A,True
+Random Forest (untuned),train,2026-01-31,Chelsea,West Ham,H,H,True
+Random Forest (untuned),train,2026-01-31,Liverpool,Newcastle,H,H,True
+Random Forest (untuned),train,2026-02-01,Aston Villa,Brentford,A,A,True
+Random Forest (untuned),train,2026-02-01,Man United,Fulham,H,H,True
+Random Forest (untuned),train,2026-02-01,Nott'm Forest,Crystal Palace,D,D,True
+Random Forest (untuned),train,2026-02-01,Tottenham,Man City,D,D,True
+Random Forest (untuned),train,2026-02-02,Sunderland,Burnley,H,H,True
+Random Forest (untuned),train,2026-02-06,Leeds,Nott'm Forest,H,H,True
+Random Forest (untuned),train,2026-02-07,Man United,Tottenham,H,H,True
+Random Forest (untuned),train,2026-02-07,Arsenal,Sunderland,H,H,True
+Random Forest (untuned),train,2026-02-07,Bournemouth,Aston Villa,D,D,True
+Random Forest (untuned),train,2026-02-07,Burnley,West Ham,A,A,True
+Random Forest (untuned),train,2026-02-07,Fulham,Everton,A,A,True
+Random Forest (untuned),train,2026-02-07,Wolves,Chelsea,A,A,True
+Random Forest (untuned),train,2026-02-07,Newcastle,Brentford,A,A,True
+Random Forest (untuned),train,2026-02-08,Brighton,Crystal Palace,A,A,True
+Random Forest (untuned),train,2026-02-08,Liverpool,Man City,A,A,True
+Random Forest (untuned),train,2026-02-10,Chelsea,Leeds,D,D,True
+Random Forest (untuned),train,2026-02-10,Everton,Bournemouth,A,A,True
+Random Forest (untuned),train,2026-02-10,Tottenham,Newcastle,A,A,True
+Random Forest (untuned),train,2026-02-10,West Ham,Man United,D,D,True
+Random Forest (untuned),train,2026-02-11,Aston Villa,Brighton,H,H,True
+Random Forest (untuned),train,2026-02-11,Crystal Palace,Burnley,A,A,True
+Random Forest (untuned),train,2026-02-11,Man City,Fulham,H,H,True
+Random Forest (untuned),train,2026-02-11,Nott'm Forest,Wolves,D,D,True
+Random Forest (untuned),train,2026-02-11,Sunderland,Liverpool,A,A,True
+Random Forest (untuned),train,2026-02-12,Brentford,Arsenal,D,D,True
+Random Forest (untuned),train,2026-02-18,Wolves,Arsenal,D,D,True
+Random Forest (untuned),train,2026-02-21,Aston Villa,Leeds,D,D,True
+Random Forest (untuned),train,2026-02-21,Brentford,Brighton,A,A,True
+Random Forest (untuned),train,2026-02-21,Chelsea,Burnley,D,D,True
+Random Forest (untuned),train,2026-02-21,West Ham,Bournemouth,D,D,True
+Random Forest (untuned),train,2026-02-21,Man City,Newcastle,H,H,True
+Random Forest (untuned),train,2026-02-22,Crystal Palace,Wolves,H,H,True
+Random Forest (untuned),train,2026-02-22,Nott'm Forest,Liverpool,A,A,True
+Random Forest (untuned),train,2026-02-22,Sunderland,Fulham,A,A,True
+Random Forest (untuned),train,2026-02-22,Tottenham,Arsenal,A,A,True
+Random Forest (untuned),train,2026-02-23,Everton,Man United,A,A,True
+Random Forest (untuned),train,2026-02-27,Wolves,Aston Villa,H,H,True
+Random Forest (untuned),train,2026-02-28,Bournemouth,Sunderland,D,D,True
+Random Forest (untuned),train,2026-02-28,Burnley,Brentford,A,A,True
+Random Forest (untuned),train,2026-02-28,Liverpool,West Ham,H,H,True
+Random Forest (untuned),train,2026-02-28,Newcastle,Everton,A,A,True
+Random Forest (untuned),train,2026-02-28,Leeds,Man City,A,A,True
+Random Forest (untuned),train,2026-03-01,Brighton,Nott'm Forest,H,H,True
+Random Forest (untuned),train,2026-03-01,Fulham,Tottenham,H,H,True
+Random Forest (untuned),train,2026-03-01,Man United,Crystal Palace,H,H,True
+Random Forest (untuned),train,2026-03-01,Arsenal,Chelsea,H,H,True
+Random Forest (untuned),train,2026-03-03,Bournemouth,Brentford,D,D,True
+Random Forest (untuned),train,2026-03-03,Everton,Burnley,H,H,True
+Random Forest (untuned),train,2026-03-03,Leeds,Sunderland,A,A,True
+Random Forest (untuned),train,2026-03-03,Wolves,Liverpool,H,H,True
+Random Forest (untuned),train,2026-03-04,Aston Villa,Chelsea,A,A,True
+Random Forest (untuned),train,2026-03-04,Brighton,Arsenal,A,A,True
+Random Forest (untuned),train,2026-03-04,Fulham,West Ham,A,A,True
+Random Forest (untuned),train,2026-03-04,Man City,Nott'm Forest,D,D,True
+Random Forest (untuned),train,2026-03-04,Newcastle,Man United,H,H,True
+Random Forest (untuned),train,2026-03-05,Tottenham,Crystal Palace,A,A,True
+Random Forest (untuned),train,2026-03-14,Burnley,Bournemouth,D,D,True
+Random Forest (untuned),train,2026-03-14,Sunderland,Brighton,A,A,True
+Random Forest (untuned),train,2026-03-14,Arsenal,Everton,H,H,True
+Random Forest (untuned),train,2026-03-14,Chelsea,Newcastle,A,A,True
+Random Forest (untuned),train,2026-03-14,West Ham,Man City,D,D,True
+Random Forest (untuned),train,2026-03-15,Crystal Palace,Leeds,D,D,True
+Random Forest (untuned),train,2026-03-15,Man United,Aston Villa,H,H,True
+Random Forest (untuned),train,2026-03-15,Nott'm Forest,Fulham,D,D,True
+Random Forest (untuned),train,2026-03-15,Liverpool,Tottenham,D,D,True
+Random Forest (untuned),train,2026-03-16,Brentford,Wolves,D,D,True
+Random Forest (untuned),train,2026-03-20,Bournemouth,Man United,D,D,True
+Random Forest (untuned),train,2026-03-21,Brighton,Liverpool,H,H,True
+Random Forest (untuned),train,2026-03-21,Fulham,Burnley,H,H,True
+Random Forest (untuned),train,2026-03-21,Everton,Chelsea,H,H,True
+Random Forest (untuned),train,2026-03-21,Leeds,Brentford,D,D,True
+Random Forest (untuned),train,2026-03-22,Newcastle,Sunderland,A,A,True
+Random Forest (untuned),train,2026-03-22,Aston Villa,West Ham,H,H,True
+Random Forest (untuned),train,2026-03-22,Tottenham,Nott'm Forest,A,A,True
+Random Forest (untuned),train,2026-04-10,West Ham,Wolves,H,H,True
+Random Forest (untuned),train,2026-04-11,Arsenal,Bournemouth,A,A,True
+Random Forest (untuned),train,2026-04-11,Brentford,Everton,D,D,True
+Random Forest (untuned),train,2026-04-11,Burnley,Brighton,A,A,True
+Random Forest (untuned),train,2026-04-11,Liverpool,Fulham,H,H,True
+Random Forest (untuned),train,2026-04-12,Crystal Palace,Newcastle,H,H,True
+Random Forest (untuned),train,2026-04-12,Nott'm Forest,Aston Villa,D,D,True
+Random Forest (untuned),train,2026-04-12,Sunderland,Tottenham,H,H,True
+Random Forest (untuned),train,2026-04-12,Chelsea,Man City,A,A,True
+Random Forest (untuned),train,2026-04-13,Man United,Leeds,A,A,True
+Random Forest (untuned),train,2026-04-18,Brentford,Fulham,D,D,True
+Random Forest (untuned),train,2026-04-18,Leeds,Wolves,H,H,True
+Random Forest (untuned),train,2026-04-18,Newcastle,Bournemouth,A,A,True
+Random Forest (untuned),train,2026-04-18,Tottenham,Brighton,D,D,True
+Random Forest (untuned),train,2026-04-18,Chelsea,Man United,A,A,True
+Random Forest (untuned),train,2026-04-19,Aston Villa,Sunderland,H,H,True
+Random Forest (untuned),validation,2026-04-19,Everton,Liverpool,A,D,False
+Random Forest (untuned),validation,2026-04-19,Nott'm Forest,Burnley,H,D,False
+Random Forest (untuned),validation,2026-04-19,Man City,Arsenal,H,H,True
+Random Forest (untuned),validation,2026-04-20,Crystal Palace,West Ham,D,D,True
+Random Forest (untuned),validation,2026-04-21,Brighton,Chelsea,H,A,False
+Random Forest (untuned),validation,2026-04-22,Bournemouth,Leeds,D,D,True
+Random Forest (untuned),validation,2026-04-22,Burnley,Man City,A,H,False
+Random Forest (untuned),validation,2026-04-24,Sunderland,Nott'm Forest,A,H,False
+Random Forest (untuned),validation,2026-04-25,Fulham,Aston Villa,H,A,False
+Random Forest (untuned),validation,2026-04-25,Liverpool,Crystal Palace,H,H,True
+Random Forest (untuned),validation,2026-04-25,West Ham,Everton,H,D,False
+Random Forest (untuned),validation,2026-04-25,Wolves,Tottenham,A,A,True
+Random Forest (untuned),validation,2026-04-25,Arsenal,Newcastle,H,A,False
+Random Forest (untuned),validation,2026-04-27,Man United,Brentford,H,H,True
+Random Forest (untuned),validation,2026-05-01,Leeds,Burnley,H,H,True
+Random Forest (untuned),validation,2026-05-02,Brentford,West Ham,H,H,True
+Random Forest (untuned),validation,2026-05-02,Newcastle,Brighton,H,A,False
+Random Forest (untuned),validation,2026-05-02,Wolves,Sunderland,D,D,True
+Random Forest (untuned),validation,2026-05-02,Arsenal,Fulham,H,H,True
+Random Forest (untuned),validation,2026-05-03,Bournemouth,Crystal Palace,H,H,True
+Random Forest (untuned),validation,2026-05-03,Man United,Liverpool,H,H,True
+Random Forest (untuned),validation,2026-05-03,Aston Villa,Tottenham,A,A,True
+Random Forest (untuned),validation,2026-05-04,Chelsea,Nott'm Forest,A,A,True
+Random Forest (untuned),validation,2026-05-04,Everton,Man City,D,D,True
+Random Forest (untuned),validation,2026-05-09,Liverpool,Chelsea,D,A,False
+Random Forest (untuned),validation,2026-05-09,Brighton,Wolves,H,H,True
+Random Forest (untuned),validation,2026-05-09,Fulham,Bournemouth,A,A,True
+Random Forest (untuned),validation,2026-05-09,Sunderland,Man United,D,D,True
+Random Forest (depth 2),train,2026-01-06,West Ham,Nott'm Forest,A,A,True
+Random Forest (depth 2),train,2026-01-07,Bournemouth,Tottenham,H,H,True
+Random Forest (depth 2),train,2026-01-07,Brentford,Sunderland,H,H,True
+Random Forest (depth 2),train,2026-01-07,Crystal Palace,Aston Villa,D,D,True
+Random Forest (depth 2),train,2026-01-07,Everton,Wolves,D,D,True
+Random Forest (depth 2),train,2026-01-07,Fulham,Chelsea,H,A,False
+Random Forest (depth 2),train,2026-01-07,Man City,Brighton,D,H,False
+Random Forest (depth 2),train,2026-01-07,Burnley,Man United,D,D,True
+Random Forest (depth 2),train,2026-01-07,Newcastle,Leeds,H,H,True
+Random Forest (depth 2),train,2026-01-08,Arsenal,Liverpool,D,H,False
+Random Forest (depth 2),train,2026-01-17,Man United,Man City,H,H,True
+Random Forest (depth 2),train,2026-01-17,Chelsea,Brentford,H,H,True
+Random Forest (depth 2),train,2026-01-17,Leeds,Fulham,H,H,True
+Random Forest (depth 2),train,2026-01-17,Liverpool,Burnley,D,H,False
+Random Forest (depth 2),train,2026-01-17,Sunderland,Crystal Palace,H,H,True
+Random Forest (depth 2),train,2026-01-17,Tottenham,West Ham,A,H,False
+Random Forest (depth 2),train,2026-01-17,Nott'm Forest,Arsenal,D,D,True
+Random Forest (depth 2),train,2026-01-18,Wolves,Newcastle,D,D,True
+Random Forest (depth 2),train,2026-01-18,Aston Villa,Everton,A,H,False
+Random Forest (depth 2),train,2026-01-19,Brighton,Bournemouth,D,A,False
+Random Forest (depth 2),train,2026-01-24,West Ham,Sunderland,H,A,False
+Random Forest (depth 2),train,2026-01-24,Burnley,Tottenham,D,D,True
+Random Forest (depth 2),train,2026-01-24,Fulham,Brighton,H,H,True
+Random Forest (depth 2),train,2026-01-24,Man City,Wolves,H,H,True
+Random Forest (depth 2),train,2026-01-24,Bournemouth,Liverpool,H,H,True
+Random Forest (depth 2),train,2026-01-25,Brentford,Nott'm Forest,A,H,False
+Random Forest (depth 2),train,2026-01-25,Crystal Palace,Chelsea,A,D,False
+Random Forest (depth 2),train,2026-01-25,Newcastle,Aston Villa,A,H,False
+Random Forest (depth 2),train,2026-01-25,Arsenal,Man United,A,A,True
+Random Forest (depth 2),train,2026-01-26,Everton,Leeds,D,D,True
+Random Forest (depth 2),train,2026-01-31,Brighton,Everton,D,H,False
+Random Forest (depth 2),train,2026-01-31,Leeds,Arsenal,A,A,True
+Random Forest (depth 2),train,2026-01-31,Wolves,Bournemouth,A,D,False
+Random Forest (depth 2),train,2026-01-31,Chelsea,West Ham,H,H,True
+Random Forest (depth 2),train,2026-01-31,Liverpool,Newcastle,H,H,True
+Random Forest (depth 2),train,2026-02-01,Aston Villa,Brentford,A,H,False
+Random Forest (depth 2),train,2026-02-01,Man United,Fulham,H,H,True
+Random Forest (depth 2),train,2026-02-01,Nott'm Forest,Crystal Palace,D,D,True
+Random Forest (depth 2),train,2026-02-01,Tottenham,Man City,D,D,True
+Random Forest (depth 2),train,2026-02-02,Sunderland,Burnley,H,H,True
+Random Forest (depth 2),train,2026-02-06,Leeds,Nott'm Forest,H,A,False
+Random Forest (depth 2),train,2026-02-07,Man United,Tottenham,H,H,True
+Random Forest (depth 2),train,2026-02-07,Arsenal,Sunderland,H,H,True
+Random Forest (depth 2),train,2026-02-07,Bournemouth,Aston Villa,D,A,False
+Random Forest (depth 2),train,2026-02-07,Burnley,West Ham,A,A,True
+Random Forest (depth 2),train,2026-02-07,Fulham,Everton,A,H,False
+Random Forest (depth 2),train,2026-02-07,Wolves,Chelsea,A,A,True
+Random Forest (depth 2),train,2026-02-07,Newcastle,Brentford,A,H,False
+Random Forest (depth 2),train,2026-02-08,Brighton,Crystal Palace,A,H,False
+Random Forest (depth 2),train,2026-02-08,Liverpool,Man City,A,H,False
+Random Forest (depth 2),train,2026-02-10,Chelsea,Leeds,D,H,False
+Random Forest (depth 2),train,2026-02-10,Everton,Bournemouth,A,A,True
+Random Forest (depth 2),train,2026-02-10,Tottenham,Newcastle,A,A,True
+Random Forest (depth 2),train,2026-02-10,West Ham,Man United,D,D,True
+Random Forest (depth 2),train,2026-02-11,Aston Villa,Brighton,H,H,True
+Random Forest (depth 2),train,2026-02-11,Crystal Palace,Burnley,A,D,False
+Random Forest (depth 2),train,2026-02-11,Man City,Fulham,H,H,True
+Random Forest (depth 2),train,2026-02-11,Nott'm Forest,Wolves,D,D,True
+Random Forest (depth 2),train,2026-02-11,Sunderland,Liverpool,A,H,False
+Random Forest (depth 2),train,2026-02-12,Brentford,Arsenal,D,D,True
+Random Forest (depth 2),train,2026-02-18,Wolves,Arsenal,D,D,True
+Random Forest (depth 2),train,2026-02-21,Aston Villa,Leeds,D,H,False
+Random Forest (depth 2),train,2026-02-21,Brentford,Brighton,A,H,False
+Random Forest (depth 2),train,2026-02-21,Chelsea,Burnley,D,H,False
+Random Forest (depth 2),train,2026-02-21,West Ham,Bournemouth,D,D,True
+Random Forest (depth 2),train,2026-02-21,Man City,Newcastle,H,H,True
+Random Forest (depth 2),train,2026-02-22,Crystal Palace,Wolves,H,D,False
+Random Forest (depth 2),train,2026-02-22,Nott'm Forest,Liverpool,A,D,False
+Random Forest (depth 2),train,2026-02-22,Sunderland,Fulham,A,H,False
+Random Forest (depth 2),train,2026-02-22,Tottenham,Arsenal,A,A,True
+Random Forest (depth 2),train,2026-02-23,Everton,Man United,A,A,True
+Random Forest (depth 2),train,2026-02-27,Wolves,Aston Villa,H,D,False
+Random Forest (depth 2),train,2026-02-28,Bournemouth,Sunderland,D,H,False
+Random Forest (depth 2),train,2026-02-28,Burnley,Brentford,A,A,True
+Random Forest (depth 2),train,2026-02-28,Liverpool,West Ham,H,H,True
+Random Forest (depth 2),train,2026-02-28,Newcastle,Everton,A,H,False
+Random Forest (depth 2),train,2026-02-28,Leeds,Man City,A,A,True
+Random Forest (depth 2),train,2026-03-01,Brighton,Nott'm Forest,H,H,True
+Random Forest (depth 2),train,2026-03-01,Fulham,Tottenham,H,H,True
+Random Forest (depth 2),train,2026-03-01,Man United,Crystal Palace,H,H,True
+Random Forest (depth 2),train,2026-03-01,Arsenal,Chelsea,H,A,False
+Random Forest (depth 2),train,2026-03-03,Bournemouth,Brentford,D,D,True
+Random Forest (depth 2),train,2026-03-03,Everton,Burnley,H,D,False
+Random Forest (depth 2),train,2026-03-03,Leeds,Sunderland,A,H,False
+Random Forest (depth 2),train,2026-03-03,Wolves,Liverpool,H,D,False
+Random Forest (depth 2),train,2026-03-04,Aston Villa,Chelsea,A,A,True
+Random Forest (depth 2),train,2026-03-04,Brighton,Arsenal,A,A,True
+Random Forest (depth 2),train,2026-03-04,Fulham,West Ham,A,H,False
+Random Forest (depth 2),train,2026-03-04,Man City,Nott'm Forest,D,H,False
+Random Forest (depth 2),train,2026-03-04,Newcastle,Man United,H,A,False
+Random Forest (depth 2),train,2026-03-05,Tottenham,Crystal Palace,A,A,True
+Random Forest (depth 2),train,2026-03-14,Burnley,Bournemouth,D,D,True
+Random Forest (depth 2),train,2026-03-14,Sunderland,Brighton,A,A,True
+Random Forest (depth 2),train,2026-03-14,Arsenal,Everton,H,H,True
+Random Forest (depth 2),train,2026-03-14,Chelsea,Newcastle,A,A,True
+Random Forest (depth 2),train,2026-03-14,West Ham,Man City,D,D,True
+Random Forest (depth 2),train,2026-03-15,Crystal Palace,Leeds,D,D,True
+Random Forest (depth 2),train,2026-03-15,Man United,Aston Villa,H,H,True
+Random Forest (depth 2),train,2026-03-15,Nott'm Forest,Fulham,D,D,True
+Random Forest (depth 2),train,2026-03-15,Liverpool,Tottenham,D,H,False
+Random Forest (depth 2),train,2026-03-16,Brentford,Wolves,D,H,False
+Random Forest (depth 2),train,2026-03-20,Bournemouth,Man United,D,D,True
+Random Forest (depth 2),train,2026-03-21,Brighton,Liverpool,H,H,True
+Random Forest (depth 2),train,2026-03-21,Fulham,Burnley,H,H,True
+Random Forest (depth 2),train,2026-03-21,Everton,Chelsea,H,A,False
+Random Forest (depth 2),train,2026-03-21,Leeds,Brentford,D,D,True
+Random Forest (depth 2),train,2026-03-22,Newcastle,Sunderland,A,H,False
+Random Forest (depth 2),train,2026-03-22,Aston Villa,West Ham,H,H,True
+Random Forest (depth 2),train,2026-03-22,Tottenham,Nott'm Forest,A,A,True
+Random Forest (depth 2),train,2026-04-10,West Ham,Wolves,H,H,True
+Random Forest (depth 2),train,2026-04-11,Arsenal,Bournemouth,A,A,True
+Random Forest (depth 2),train,2026-04-11,Brentford,Everton,D,H,False
+Random Forest (depth 2),train,2026-04-11,Burnley,Brighton,A,A,True
+Random Forest (depth 2),train,2026-04-11,Liverpool,Fulham,H,H,True
+Random Forest (depth 2),train,2026-04-12,Crystal Palace,Newcastle,H,D,False
+Random Forest (depth 2),train,2026-04-12,Nott'm Forest,Aston Villa,D,D,True
+Random Forest (depth 2),train,2026-04-12,Sunderland,Tottenham,H,H,True
+Random Forest (depth 2),train,2026-04-12,Chelsea,Man City,A,A,True
+Random Forest (depth 2),train,2026-04-13,Man United,Leeds,A,H,False
+Random Forest (depth 2),train,2026-04-18,Brentford,Fulham,D,H,False
+Random Forest (depth 2),train,2026-04-18,Leeds,Wolves,H,H,True
+Random Forest (depth 2),train,2026-04-18,Newcastle,Bournemouth,A,A,True
+Random Forest (depth 2),train,2026-04-18,Tottenham,Brighton,D,A,False
+Random Forest (depth 2),train,2026-04-18,Chelsea,Man United,A,A,True
+Random Forest (depth 2),train,2026-04-19,Aston Villa,Sunderland,H,H,True
+Random Forest (depth 2),validation,2026-04-19,Everton,Liverpool,A,A,True
+Random Forest (depth 2),validation,2026-04-19,Nott'm Forest,Burnley,H,D,False
+Random Forest (depth 2),validation,2026-04-19,Man City,Arsenal,H,H,True
+Random Forest (depth 2),validation,2026-04-20,Crystal Palace,West Ham,D,D,True
+Random Forest (depth 2),validation,2026-04-21,Brighton,Chelsea,H,A,False
+Random Forest (depth 2),validation,2026-04-22,Bournemouth,Leeds,D,A,False
+Random Forest (depth 2),validation,2026-04-22,Burnley,Man City,A,D,False
+Random Forest (depth 2),validation,2026-04-24,Sunderland,Nott'm Forest,A,H,False
+Random Forest (depth 2),validation,2026-04-25,Fulham,Aston Villa,H,A,False
+Random Forest (depth 2),validation,2026-04-25,Liverpool,Crystal Palace,H,H,True
+Random Forest (depth 2),validation,2026-04-25,West Ham,Everton,H,D,False
+Random Forest (depth 2),validation,2026-04-25,Wolves,Tottenham,A,A,True
+Random Forest (depth 2),validation,2026-04-25,Arsenal,Newcastle,H,H,True
+Random Forest (depth 2),validation,2026-04-27,Man United,Brentford,H,H,True
+Random Forest (depth 2),validation,2026-05-01,Leeds,Burnley,H,H,True
+Random Forest (depth 2),validation,2026-05-02,Brentford,West Ham,H,H,True
+Random Forest (depth 2),validation,2026-05-02,Newcastle,Brighton,H,A,False
+Random Forest (depth 2),validation,2026-05-02,Wolves,Sunderland,D,D,True
+Random Forest (depth 2),validation,2026-05-02,Arsenal,Fulham,H,H,True
+Random Forest (depth 2),validation,2026-05-03,Bournemouth,Crystal Palace,H,H,True
+Random Forest (depth 2),validation,2026-05-03,Man United,Liverpool,H,H,True
+Random Forest (depth 2),validation,2026-05-03,Aston Villa,Tottenham,A,H,False
+Random Forest (depth 2),validation,2026-05-04,Chelsea,Nott'm Forest,A,A,True
+Random Forest (depth 2),validation,2026-05-04,Everton,Man City,D,D,True
+Random Forest (depth 2),validation,2026-05-09,Liverpool,Chelsea,D,H,False
+Random Forest (depth 2),validation,2026-05-09,Brighton,Wolves,H,H,True
+Random Forest (depth 2),validation,2026-05-09,Fulham,Bournemouth,A,A,True
+Random Forest (depth 2),validation,2026-05-09,Sunderland,Man United,D,D,True

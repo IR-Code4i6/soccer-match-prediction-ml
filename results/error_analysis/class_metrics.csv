@@ -1,0 +1,13 @@
+model,split,class,class_name,precision,recall,f1-score,support
+Random Forest (untuned),train,H,Home win,1.0,1.0,1.0,44.0
+Random Forest (untuned),train,D,Draw,1.0,1.0,1.0,38.0
+Random Forest (untuned),train,A,Away win,1.0,1.0,1.0,43.0
+Random Forest (untuned),validation,H,Home win,0.8181818181818182,0.6,0.6923076923076923,15.0
+Random Forest (untuned),validation,D,Draw,0.625,0.8333333333333334,0.7142857142857143,6.0
+Random Forest (untuned),validation,A,Away win,0.4444444444444444,0.5714285714285714,0.5,7.0
+Random Forest (depth 2),train,H,Home win,0.5238095238095238,0.75,0.616822429906542,44.0
+Random Forest (depth 2),train,D,Draw,0.7096774193548387,0.5789473684210527,0.6376811594202898,38.0
+Random Forest (depth 2),train,A,Away win,0.7096774193548387,0.5116279069767442,0.5945945945945946,43.0
+Random Forest (depth 2),validation,H,Home win,0.7692307692307693,0.6666666666666666,0.7142857142857143,15.0
+Random Forest (depth 2),validation,D,Draw,0.5714285714285714,0.6666666666666666,0.6153846153846154,6.0
+Random Forest (depth 2),validation,A,Away win,0.5,0.5714285714285714,0.5333333333333333,7.0

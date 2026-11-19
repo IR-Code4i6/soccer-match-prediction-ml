@@ -1,0 +1,9 @@
+model,setting,accuracy_mean,accuracy_sd,accuracy_ci_low,accuracy_ci_high,macro_f1_mean,macro_f1_sd,macro_f1_ci_low,macro_f1_ci_high,train_seconds_mean
+Majority,baseline,0.444,0.0,0.444,0.444,0.205,0.0,0.205,0.205,0.007
+Logistic Regression,baseline,0.407,0.0,0.407,0.407,0.389,0.0,0.389,0.389,0.01
+Random Forest,default (max_depth=None),0.363,0.041,0.313,0.413,0.341,0.034,0.299,0.384,0.21
+Random Forest,tuned (max_depth=2),0.467,0.033,0.426,0.508,0.426,0.029,0.39,0.463,0.209
+MLP (32),default (alpha=0.001),0.341,0.076,0.246,0.435,0.321,0.08,0.222,0.421,0.279
+MLP (32),tuned (alpha=10),0.452,0.031,0.413,0.49,0.396,0.033,0.355,0.438,0.176
+MLP (32) + PCA,default (95% variance),0.333,0.052,0.268,0.398,0.318,0.064,0.239,0.397,0.304
+MLP (32) + PCA,tuned (90% variance),0.378,0.066,0.296,0.46,0.338,0.058,0.265,0.411,0.312

@@ -1,0 +1,3 @@
+model,train,validation,train_validation_gap
+Random Forest (depth 2),0.6163660613071422,0.621001221001221,-0.004635159694078794
+Random Forest (untuned),1.0,0.6355311355311355,0.3644688644688645

@@ -1,0 +1,264 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-20T01:10:10.180451+00:00",
+  "started_local": "2026-11-19T20:10:10.180451-05:00",
+  "base_commit": "90b0ad5b5e37c00e3a12c81c91f6b62fcb6a414b",
+  "source_branch": "mohammad-tuning",
+  "source_files_sha256": {
+    "src/section46_experiments.py": "7a76fddffc20d19ad543d37a057d020cc88c782393331ec4268b4e3a08269c15",
+    "main.py": "5764aff33986f07f63ce058544bc375dc322a82fdcecbe9769c89b818414e061",
+    "requirements.txt": "83f499b9d6423148a975fce7c2a6a56b495dc6e66e2af6b0f7348eab9d3d977f",
+    "src/__init__..py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/baseline.py": "7d3c68105d30f61d7025af7682aa5a2c443b47e2eba3f1143d7218e193801f3f",
+    "src/data_pipeline.py": "55970d9a31d02809c014d755e133a47a3253bc4cc59cbabcf14622cc72f55f95",
+    "src/experiments.py": "104514b41217ec82dbaccd5b8e882187f702ecc94e4e7da0c96e8eb1ee961024",
+    "src/final_evaluation.py": "ba514774f11deceb4727d6b6b447f45396de7f90dcb54b953aa504c2dc632911",
+    "src/neural_network.py": "ddfe82d1551c6a9c23b05fb18983e10887dc89faf807b8c0149d87dbe2c4449b",
+    "src/random_forest.py": "2c2137da6c3a1b4e6be0fe8638a3f9b21dbc7e00ba932ae3684cc8346c6817e8",
+    "src/tuning.py": "356dc9656f1dd73b2684b4adc8142d2cde75cb851d17a9efe200637557f31838"
+  },
+  "cleaned_data_sha256": "51cc66749c7430f08fba7f4e0d6861f1266726cd665f5d5e3dcfed3c0620529a",
+  "existing_results_sha256": {
+    "baseline_classification_report.csv": "1bd920e5ab40373bcc4e9ec0ea811bafe2f42daa19310bc67262c000bc83d9bb",
+    "baseline_data_summary.csv": "e61c56f2e1330f276aaa853a32b8f7e162592773eff30b2b6c42f2c229fc34bf",
+    "baseline_results.csv": "3cf5c6cfe575daa881fa4ac28c8a5074d64c0d29027ae9dbcf00d9d2e08bc210",
+    "final_evaluation.csv": "5e907de6deb06c4255dd44248428347bafec4770ae01fdb3e710cdd7fe8f0c64",
+    "final_evaluation_per_seed.csv": "5b63535263e52cbe577cbaa98be17b4adbbe6d70961d39d63214099ea93d7cbe",
+    "final_test_results.csv": "8c13750f3f5242690b6d8e707b8b351c0f7a4b01391468aeca15218d026075ea",
+    "tuning_results.csv": "2c606fd97a48db4dee62146457735c2f011de716cd9e0f62527644895c0c8bbf",
+    "tuning_results_per_seed.csv": "a7125e542fecd93541694fd0e0f35791e64dd50041f535dd737fb4cce3a4a34a",
+    "validation_results.csv": "cb55eb2d167fc93e589061971481d77875b9a07b572dfc7c0b2464c00f3b5064"
+  },
+  "environment": {
+    "python": "3.11.0",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2"
+    },
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 20,
+    "forest_n_jobs": 1,
+    "timezone": "America/Toronto"
+  },
+  "protocol": {
+    "model": "Random Forest",
+    "max_depth": 2,
+    "min_samples_leaf": 1,
+    "baseline_n_estimators": 200,
+    "model_seeds": [
+      42,
+      0,
+      1,
+      2,
+      3
+    ],
+    "configurations": [
+      {
+        "config_id": "full_c10_t200",
+        "label": "Full tuned model",
+        "window": 10,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points",
+          "shots_on_target"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "history_3",
+        "label": "3 venue matches",
+        "window": 3,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points",
+          "shots_on_target"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "history_5",
+        "label": "5 venue matches",
+        "window": 5,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points",
+          "shots_on_target"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "trees_100",
+        "label": "100 trees",
+        "window": 10,
+        "n_estimators": 100,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points",
+          "shots_on_target"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "trees_500",
+        "label": "500 trees",
+        "window": 10,
+        "n_estimators": 500,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points",
+          "shots_on_target"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "without_shots",
+        "label": "Without shots on target",
+        "window": 10,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "without_points",
+        "label": "Without points",
+        "window": 10,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "shots_on_target"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "goals_only",
+        "label": "Goals only",
+        "window": 10,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against"
+        ],
+        "training_fraction": 1.0
+      },
+      {
+        "config_id": "training_50",
+        "label": "Latest 50% of training rows",
+        "window": 10,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points",
+          "shots_on_target"
+        ],
+        "training_fraction": 0.5
+      },
+      {
+        "config_id": "training_75",
+        "label": "Latest 75% of training rows",
+        "window": 10,
+        "n_estimators": 200,
+        "stats": [
+          "goals_for",
+          "goals_against",
+          "points",
+          "shots_on_target"
+        ],
+        "training_fraction": 0.75
+      }
+    ],
+    "studies": {
+      "history_window": [
+        "history_3",
+        "history_5",
+        "full_c10_t200"
+      ],
+      "forest_size": [
+        "trees_100",
+        "full_c10_t200",
+        "trees_500"
+      ],
+      "ablation": [
+        "full_c10_t200",
+        "without_shots",
+        "without_points",
+        "goals_only"
+      ],
+      "training_size": [
+        "training_50",
+        "training_75",
+        "full_c10_t200"
+      ]
+    },
+    "mask_master_seed": 4602026,
+    "mask_replicates": 20,
+    "missing_probabilities": [
+      0.1,
+      0.2
+    ],
+    "selection": "Frozen validation-only diagnostics; do not select a new final model.",
+    "test_evaluation": "No test predictions or metrics are computed.",
+    "training_subset": "Latest contiguous 62/93/125 training rows; all original past match histories remain available. Sample size, date coverage and class mix change together.",
+    "missingness": "Independent uniform draws per fixture-feature cell; common draws across model seeds and nested thresholds across missingness levels. Imputer is fitted only on clean training data.",
+    "uncertainty": "Mean/sample SD and t intervals over five model seeds on one fixed split. For missingness, average 20 masks within seed first. Mask variability is reported separately; 100 seed-mask scores are not independent trials.",
+    "failed_or_discarded_runs": "All attempted evaluations are logged, including failures. No unsuccessful condition is discarded from reporting."
+  },
+  "data_warnings": [
+    "Parsing dates in %Y-%m-%d format when dayfirst=True was specified. Pass `dayfirst=False` or specify a format to silence this warning."
+  ],
+  "split": {
+    "train_count": 125,
+    "validation_count": 28,
+    "train_dates": [
+      "2026-01-06",
+      "2026-04-19"
+    ],
+    "validation_dates": [
+      "2026-04-19",
+      "2026-05-09"
+    ],
+    "train_classes": {
+      "H": 44,
+      "A": 43,
+      "D": 38
+    },
+    "validation_classes": {
+      "H": 15,
+      "A": 7,
+      "D": 6
+    },
+    "train_frame_sha256": "6cf56ecd76aaff12660f57224a816fc7c51ed28edae364721d503b0863fdf1a6",
+    "validation_frame_sha256": "a7b3cb4e77ad970255f5cbdb314593338fb59d3047707d9253c8eb52554b616b"
+  },
+  "completed_utc": "2026-11-20T01:10:25.224442+00:00",
+  "fit_count": 50,
+  "masked_evaluation_count": 200,
+  "successful_log_rows": 250,
+  "failed_runs": 0,
+  "validation_prediction_rows": 7000,
+  "checks": {
+    "archived_seed42_baseline_reproduced": true,
+    "common_nested_masks": true,
+    "training_only_imputation": true,
+    "same_validation_fixtures": true,
+    "original_data_and_results_unchanged": true,
+    "test_metrics_computed": false
+  }
+}

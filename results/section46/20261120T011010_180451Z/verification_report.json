@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-20T01:13:19.560405+00:00",
+  "run_directory": "C:\\Users\\naser\\.codex\\visualizations\\2026\\11\\20\\01a1f66f-b089-77d1-be60-75bf9c7c4ba3\\section46-project\\results\\section46\\20261120T011010_180451Z",
+  "validator_sha256": "41c884797ea17fcd432ecfd4f4615821cb806b3bc73e7ebcfa727b97b2a1baff",
+  "validation_predictions_verified": 7000,
+  "validation_events_verified": 250,
+  "unique_fits_verified": 50,
+  "masked_evaluations_verified": 200,
+  "config_summary_rows_verified": 13,
+  "robustness_seed_rows_verified": 15,
+  "mask_definitions_regenerated": 40,
+  "checks": [
+    "Prediction-derived confusion matrices, accuracy and macro-F1",
+    "CSV/JSONL log agreement",
+    "Every event uses the identical ordered validation fixtures",
+    "Five-seed means, sample SDs and t intervals",
+    "Paired condition-minus-reference changes",
+    "Within-seed mask averaging and separate mask variability",
+    "Mask RNG regeneration, hashes, nested severity and sharing across seeds",
+    "Feature definitions and fitting-sample counts",
+    "Run IDs, parent fit reuse, statuses and timing fields",
+    "Current source/data and preserved original result hashes"
+  ],
+  "limitations": [
+    "No model retraining performed by this verifier.",
+    "Training macro-F1 cannot be independently derived because training predictions were not exported; arithmetic summaries and gaps are checked.",
+    "No-test-scoring and training-only preprocessing are established by code review and log scope, not by saved predictions alone.",
+    "Seed t intervals describe model randomness conditional on this split; they are not intervals for future-match performance."
+  ],
+  "result_highlights": {
+    "history_3": {
+      "macro_f1_mean": 0.24079041047600885,
+      "macro_f1_sd": 0.024447347502527073,
+      "paired_delta_mean": -0.3405190152585974
+    },
+    "history_5": {
+      "macro_f1_mean": 0.3007413372068545,
+      "macro_f1_sd": 0.01139227408248208,
+      "paired_delta_mean": -0.28056808852775184
+    },
+    "full_c10_t200": {
+      "macro_f1_mean": 0.5813094257346062,
+      "macro_f1_sd": 0.04855911690154729,
+      "paired_delta_mean": 0.0
+    },
+    "trees_100": {
+      "macro_f1_mean": 0.5447305787894023,
+      "macro_f1_sd": 0.08010417829450088,
+      "paired_delta_mean": -0.036578846945204024
+    },
+    "trees_500": {
+      "macro_f1_mean": 0.5835922973177875,
+      "macro_f1_sd": 0.01754993793103374,
+      "paired_delta_mean": 0.002282871583181234
+    },
+    "without_shots": {
+      "macro_f1_mean": 0.43623268907066637,
+      "macro_f1_sd": 0.022069764349915536,
+      "paired_delta_mean": -0.14507673666393997
+    },
+    "without_points": {
+      "macro_f1_mean": 0.6279057174709348,
+      "macro_f1_sd": 0.043769453343755156,
+      "paired_delta_mean": 0.04659629173632853
+    },
+    "goals_only": {
+      "macro_f1_mean": 0.5806954956002918,
+      "macro_f1_sd": 0.05444498477620521,
+      "paired_delta_mean": -0.000613930134314522
+    },
+    "training_50": {
+      "macro_f1_mean": 0.3999145992530455,
+      "macro_f1_sd": 0.029806924437731697,
+      "paired_delta_mean": -0.18139482648156083
+    },
+    "training_75": {
+      "macro_f1_mean": 0.5789009809299664,
+      "macro_f1_sd": 0.036325998079019546,
+      "paired_delta_mean": -0.0024084448046398643
+    }
+  },
+  "artifact_sha256": {
+    "config_summary.csv": "7bfaee62706fd8acdce726251e3e1d1bf8c0879a98bfa27ed3534b3128f57176",
+    "experiment_log.csv": "6057f4e73810bf5da38bed2a1faaa3115747d23c5d8241ded1a8f6b6fe70716c",
+    "experiment_log.jsonl": "d597e20ce43deac8c50daef89d778195583904ff861802ae03f703374a6e53c8",
+    "masks.json": "7fafce0d528e94e818dd2a26add20caa853f335f8d3bf2ce5a4e0a2dbbf1195d",
+    "protocol.json": "eea4b21b7e10647c7117852af8ae1fb34909c22c5b00ef8e0ea20a1de89ef235",
+    "robustness_by_seed.csv": "282947d758a078e004f9c0c66eb162255eabd2c299665c9e6e72a43f9ef1ad71",
+    "robustness_summary.csv": "c76b65260b6a161a8bf3bae4553c4b811bad7a3f3c243d30a8c2bad09a73b95d",
+    "run_manifest.json": "39a8def25a7cbcc3ddcfb62c799c0d06b8c8e921ff993fb6f9e9619e349cb6a2",
+    "validation_fixtures.csv": "8f125f2bc0c3cc899cdfb2ae1095c2760e68ca561975b328223f996df6397248",
+    "validation_predictions.csv": "38f4e52c77293d1f4ef4755915b876489e6e830594485b2b5af0f805b3403395"
+  }
+}

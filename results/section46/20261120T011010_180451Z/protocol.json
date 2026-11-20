@@ -1,0 +1,176 @@
+{
+  "model": "Random Forest",
+  "max_depth": 2,
+  "min_samples_leaf": 1,
+  "baseline_n_estimators": 200,
+  "model_seeds": [
+    42,
+    0,
+    1,
+    2,
+    3
+  ],
+  "configurations": [
+    {
+      "config_id": "full_c10_t200",
+      "label": "Full tuned model",
+      "window": 10,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points",
+        "shots_on_target"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "history_3",
+      "label": "3 venue matches",
+      "window": 3,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points",
+        "shots_on_target"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "history_5",
+      "label": "5 venue matches",
+      "window": 5,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points",
+        "shots_on_target"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "trees_100",
+      "label": "100 trees",
+      "window": 10,
+      "n_estimators": 100,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points",
+        "shots_on_target"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "trees_500",
+      "label": "500 trees",
+      "window": 10,
+      "n_estimators": 500,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points",
+        "shots_on_target"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "without_shots",
+      "label": "Without shots on target",
+      "window": 10,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "without_points",
+      "label": "Without points",
+      "window": 10,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "shots_on_target"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "goals_only",
+      "label": "Goals only",
+      "window": 10,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against"
+      ],
+      "training_fraction": 1.0
+    },
+    {
+      "config_id": "training_50",
+      "label": "Latest 50% of training rows",
+      "window": 10,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points",
+        "shots_on_target"
+      ],
+      "training_fraction": 0.5
+    },
+    {
+      "config_id": "training_75",
+      "label": "Latest 75% of training rows",
+      "window": 10,
+      "n_estimators": 200,
+      "stats": [
+        "goals_for",
+        "goals_against",
+        "points",
+        "shots_on_target"
+      ],
+      "training_fraction": 0.75
+    }
+  ],
+  "studies": {
+    "history_window": [
+      "history_3",
+      "history_5",
+      "full_c10_t200"
+    ],
+    "forest_size": [
+      "trees_100",
+      "full_c10_t200",
+      "trees_500"
+    ],
+    "ablation": [
+      "full_c10_t200",
+      "without_shots",
+      "without_points",
+      "goals_only"
+    ],
+    "training_size": [
+      "training_50",
+      "training_75",
+      "full_c10_t200"
+    ]
+  },
+  "mask_master_seed": 4602026,
+  "mask_replicates": 20,
+  "missing_probabilities": [
+    0.1,
+    0.2
+  ],
+  "selection": "Frozen validation-only diagnostics; do not select a new final model.",
+  "test_evaluation": "No test predictions or metrics are computed.",
+  "training_subset": "Latest contiguous 62/93/125 training rows; all original past match histories remain available. Sample size, date coverage and class mix change together.",
+  "missingness": "Independent uniform draws per fixture-feature cell; common draws across model seeds and nested thresholds across missingness levels. Imputer is fitted only on clean training data.",
+  "uncertainty": "Mean/sample SD and t intervals over five model seeds on one fixed split. For missingness, average 20 masks within seed first. Mask variability is reported separately; 100 seed-mask scores are not independent trials.",
+  "failed_or_discarded_runs": "All attempted evaluations are logged, including failures. No unsuccessful condition is discarded from reporting."
+}

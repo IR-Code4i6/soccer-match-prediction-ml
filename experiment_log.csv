@@ -1,0 +1,24 @@
+﻿Run ID,Model,Hyperparameters,Val F1,Runtime,Data split,Observation
+E001,Majority baseline,"Most frequent: C, W5",-,NR,"125/28/27, deterministic",Test F1 0.205 lower bound benchmark
+E002,Logistic Regression baseline,"C, W5, max_iter=2000",-,NR,"125/28/27, 42",Test F1 0.342 better macro F1 than majority
+E003,Logistic Regression,"C, W10, default C=1",0.513,NR,"125/28/27, 42",Longer history improved validation F1 over W5 (0.430)
+E004,"Random Forest, default","C, W10, 200 trees, depth=None",0.636,NR,"125/28/27, 42",Best initial validation F1 earlier test F1 0.319
+E005,MLP (32),"A, W10, alpha=0.001",0.624,NR,"125/28/27, 42",Strong initial validation F1 RF selected instead
+E006,"MLP (64,32)","B, W5, alpha=0.001",0.595,NR,"125/28/27, 42",Alternative neural network architecture
+E007,MLP (32) + PCA,"B, W5, variance=95%",0.484,NR,"125/28/27, 42",PCA did not improve this model's best validation result
+E008,"RF, recency","Recent 5 vs older 5, 16 inputs",0.419,NR,"125/28/27, 42","Below standard C, W10 RF"
+E009,"RF tuning, selected","C, W10, depth=2, leaf=1, 200 trees",0.581 ± 0.049,NR,"125/28/27, 5 seeds",Reduced overfitting selected depth
+E010,RF leaf-size tuning,"C, W10, leaf=20, depth=None",0.572,NR,"125/28/27, 5 seeds",Best leaf sweep not combined with selected depth
+E011,"MLP (32), tuned","C, W10, alpha=10",0.562,NR,"125/28/27, 5 seeds",Best alpha sweep
+E012,"MLP (32) + PCA, tuned","C, W10, variance=90%, alpha=0.001",0.503,NR,"125/28/27, 5 seeds",Best PCA variance sweep
+E013,RF error analysis,"C, W10, depth=2, 200 trees",0.621,NR,"125/28/27, 42",18/28 correct similar validation accuracy to untuned RF
+E014,"RF, untuned final","C, W10, depth=None",-,0.210 s,"153/27, 5 seeds",Test F1 0.341 ± 0.034
+E015,"RF, tuned final","C, W10, depth=2",-,0.209 s,"153/27, 5 seeds",Test F1 0.426 ± 0.029 highest mean
+E016,"MLP (32), tuned final","C, W10, alpha=10",-,0.176 s,"153/27, 5 seeds",Test F1 0.396 ± 0.033
+E017,Logistic Regression final,"C, W10, C=1.0",-,0.010 s,"153/27, 5 seeds",Test F1 0.389 deterministic
+E018,RF window sensitivity,"C, W3, depth=2, 200 trees",0.241 ± 0.024,NR,"125/28/27, 5 seeds",Much worse than W10
+E019,RF window sensitivity,"C, W5, depth=2, 200 trees",0.301 ± 0.011,NR,"125/28/27, 5 seeds",Below W10 reference
+E020,RF training-size robustness,"C, W10, depth=2, latest 62 rows",0.400 ± 0.030,NR,"62/28, 5 seeds",Less fitting data reduced F1
+E021,RF missing-data robustness,"C, W10, depth=2, 20% random masking",0.568 ± 0.034,NR,"125/28, 5 seeds × 20 masks",Small mean drop greater mask sensitivity
+E022,RF feature ablation,"C, W10, depth=2, without shots",0.436 ± 0.022,NR,"125/28, 5 seeds",F1 dropped 0.145
+E023,RF feature ablation,"C, W10, depth=2, without points",0.628 ± 0.044,NR,"125/28, 5 seeds",F1 rose 0.047 uncertainty includes zero
